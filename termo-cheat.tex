@@ -227,7 +227,7 @@ $K = 4\pi n \left(\frac{m}{2\pi k_B T} \right)^\frac{3}{2}$
 
 \section{Värme}
 Energi för att förändra temp.\\
-$\Delta Q = m C \Delta T \unit{\joule}$ 
+$\Delta Q = m c \Delta T \unit{\joule}$ 
 
 
 Molar isokor värmekapacitet ideal gas\\
@@ -250,7 +250,7 @@ $C_m = 3R \unit{\joule\per\mol\per\kelvin}$
 %$p = \sum p_i$ 
 
 
-\section{Adiabiska processer}
+\section{Adiabatiska processer}
 
 %$\Delta S = 0; \Delta Q = 0$
 
@@ -314,12 +314,12 @@ Vid isokor process\\
 $dU = \nu C_V dT$ 
 
 
-Entalpi\\
-$H = U + pV$ 
+%Entalpi\\
+%$H = U + pV$ 
 
 
 Arbete på en gas\\
-$\displaystyle W = -\int_{V_1}^{V_2} pdV$ 
+$\displaystyle W = -\int_{1}^{2} pdV$ 
 
 
 Isotermt kompressionsarbete på en gas\\
@@ -358,6 +358,29 @@ Need proof
 $\Delta S = \nu C_V \cdot \ln \frac{T_2}{T_1} + \nu R \cdot \ln \frac{V_2}{V_1}$
 }
 
+$$$$
+
+Entalpi\\
+$H = U + pV$\\
+$dH = dU + pdV + Vdp$
+
+Fria energin (Helmholtz funktion)\\
+$F = U -TS$\\
+$dF = dU - TdS - SdT$
+
+Fria entalpin (Gibbs funktion)\\
+$G = F + pV$\\
+\textcolor{orange}{ska vi kunna detta?}
+$dG = -SdT + Vdp + \mu N$
+
+$$$$
+Vid isoterm process så är\\
+$\dbar W = dF$
+
+Vid fasövergång är $H$ ej kontinuerlig (med avseende på temperatur), $G$ är kontinuerlig men dess derivata är inte det
+
+$H = G + TS$
+
 \section{Carnotprocesser}
 %Index H avser varma (hot) delen i processen, C avser kalla (cold) delen
 $T_H \ge T_C$
@@ -370,6 +393,7 @@ $\frac{|Q_H|}{T_H} = \frac{|Q_C|}{T_C}$
 $-W = Q_H + Q_C$ (termer kan vara negativa)
 
 $|W| = |Q_H| - |Q_C|$
+
 \end{multicols}
 
 %\vskip\medskipamount % or other desired dimension
@@ -445,9 +469,9 @@ $CO$ & 2.53\\
 Ämne & $\gamma$\\
 \hline
 Luft & 1.4\\
+$H_2$ & 1.4\\
 $CO_2$ & 1.3\\
 $H_2O$ & 1.3\\
-$H_2$ & 1.4\\
 &\\
 \end{tabular}
 }
@@ -499,6 +523,7 @@ $b_0 = bN_A; a_0 = aN_A^2; v = \frac{V}{\nu}$
 $\displaystyle \left(p + \frac{a_0}{v^2} \right)\cdot (v - b_0) = RT$\hfill Van der Waals tillståndsekvation
 
 \section{Strålning}
+$\varepsilon = \text{emissivitet}; \alpha = \text{absorptionsfaktor}$\\
 $\rho = \text{reflexionsfaktor}; \tau = \text{transmissionsfaktor}$
 
 $\nu = \text{frekvens} = \frac{c}{\lambda}$
