@@ -147,7 +147,7 @@ $$
      \tiny{Aron Granberg, Daniel Kempe, Mårten Wiman}
 \end{center}
 
-$$$$
+%$$$$
 %\begin{multicols}{2}
 
 
@@ -203,7 +203,7 @@ $pV = \frac{2}{3}U$
 $$$$
 
 Medelfri väg\\
-$l = \frac{k_BT}{\sqrt{2}\pi d^2 p} = \frac{1}{n \sigma \sqrt{2}}$  
+$l = \frac{k_BT}{p \pi d^2 \sqrt{2}} = \frac{1}{n \pi d^2 \sqrt{2}} \unit{\meter}$  
 
 
 Där $d = \text{partikelns diameter}$
@@ -221,7 +221,7 @@ $\nu^* = \frac{p}{\sqrt{2 \pi mk_BT}} = \frac{1}{4}n \langle v \rangle \unit{\pe
 Maxwell-Boltzmanns hastighetsfördelning\\
 $\displaystyle n(v) = \text{K} \cdot v^2 \cdot e^{-\frac{mv^2}{2k_BT}}$ 
 
-om $\int n(v) = \frac{N}{V}$, dvs om normaliserat\\
+om $\int n(v) dv = \frac{N}{V}$, dvs om normaliserat\\
 $K = 4\pi n \left(\frac{m}{2\pi k_B T} \right)^\frac{3}{2}$ 
 
 
@@ -231,7 +231,8 @@ $\Delta Q = m c \Delta T \unit{\joule}$
 
 
 Molar isokor värmekapacitet ideal gas\\
-$C_V = \frac{1}{\nu} \frac{dU}{dT} \unit{\joule\per\mol\per\kelvin}$ 
+$C_V = \frac{1}{\nu} \left ( \frac{\partial U}{\partial T} \right)_V \unit{\joule\per\mol\per\kelvin}$ 
+
 
 Enatomig ideal gas har\\
 $C_V = \frac{3}{2}R$
@@ -239,10 +240,15 @@ $C_V = \frac{3}{2}R$
 Molar isobar värmekapacitet ideal gas\\
 $C_p = C_V + R \unit{\joule\per\mol\per\kelvin}$ 
 
+Molar isobar värmekapacitet ideal gas\\
+$C_p = \frac{1}{\nu} \left ( \frac{\partial U}{\partial T} \right)_p \unit{\joule\per\mol\per\kelvin}$ 
+
 Molar värmekapacitet fast kropp\\
 $C_m = 3R \unit{\joule\per\mol\per\kelvin}$ 
 
+%$\left( \frac{ \partial Q}{\partial T} \right)_p = \nu C_p$
 
+%$\left( \frac{ \partial Q}{\partial T} \right)_p = \nu C_p$
 
 
 %\section{Tryck}
@@ -269,7 +275,7 @@ $Tp^{(1-\gamma)/\gamma} = \text{konst.}$
 $TV^{\gamma-1} = \text{konst.}$                                                                                                                                                                                                                                    
 
 Adiabatiskt arbete på en gas\\
-$\displaystyle W = -\int_0^1 pdV = \frac{p_1V_1 - p_2V_2}{1-\gamma}$
+$\displaystyle W = -\int_1^2 pdV = \frac{p_1V_1 - p_2V_2}{1-\gamma}$
 
 \section{Matematik}
 Sfär: $A = 4\pi r^2; V = \frac{4\pi r^3}{3}$
@@ -356,7 +362,7 @@ Om $S_A$ är entropi för system A och $S_B$ entropi för system B så har
 $S_A$ och $S_B$ sett som ett enda system entropin\\
 $S_{A \cup B} = S_A + S_B$
 
-$$$$
+%$$$$
 
 Entalpi\\
 $H = U + pV$\\
@@ -368,8 +374,17 @@ $dF = dU - TdS - SdT$
 
 Fria entalpin (Gibbs funktion)\\
 $G = F + pV$\\
-\textcolor{orange}{ska vi kunna detta?}
-$dG = -SdT + Vdp + \mu N$
+
+%\subsection{Differentialer}
+$\mu$ är en ämneskonstant
+
+$dU = TdS - pdV + \mu dN$
+
+$dF = -SdT - pdV + \mu dN$
+
+$dH = TdS + Vdp + \mu dN$
+
+$dG = -SdT + Vdp + \mu dN$
 
 $$$$
 Vid isoterm process så är\\
